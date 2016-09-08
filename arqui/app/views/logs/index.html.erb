@@ -1,0 +1,9 @@
+<h1>Todas las requests:</h1>
+
+<ul>
+  <% @logs.each do |log| %>
+    <li>
+      IP: <%= log.log_ip %> Date: <%= log.date %>
+    </li>
+  <% end %>
+</ul>
