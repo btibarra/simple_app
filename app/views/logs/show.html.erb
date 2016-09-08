@@ -1,0 +1,12 @@
+<h1>Algunas request:</h1>
+
+<ul>
+  <% @logs[-11..-1].each do |log| %>
+    <li>
+      IP: <%= log.log_ip %> Date: <%= log.date %>
+    </li>
+  <% end %>
+
+</ul>
+
+<div>  <%= link_to 'Ver todos', logs_path%> </div>
